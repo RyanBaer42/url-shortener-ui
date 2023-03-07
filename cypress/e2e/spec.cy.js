@@ -18,6 +18,7 @@ describe('empty spec', () => {
   it('When a user visits the page, they can view the page title and the existing shortened URLs', () => {
     cy.get('.website-name')
       .should('be.visible')
+      .contains('URL Shortener')
     cy.get('.url')
       .should('be.visible')
   })
