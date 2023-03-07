@@ -13,6 +13,20 @@ export class App extends Component {
   }
 
   componentDidMount() {
+    return fetch('http://localhost:3001/api/v1/urls')
+    .then(response => {
+      if (response.ok){
+        return response.json()
+      } else {
+        throw new Error
+      }
+    })
+    .then(data => {
+      this.setState({urls: data.urls})
+    })
+    .catch(error => {
+      console.log(error)
+    })
   }
 
   render() {
