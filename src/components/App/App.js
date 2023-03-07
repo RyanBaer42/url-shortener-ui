@@ -58,7 +58,7 @@ export class App extends Component {
     return (
       <main className="App">
         <header>
-          <h1>URL Shortener</h1>
+          <h1 className='website-name'>URL Shortener</h1>
           <UrlForm urls={this.state.urls} sendUrl={this.sendUrl}/>
         </header>
 

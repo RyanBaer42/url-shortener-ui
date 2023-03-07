@@ -33,6 +33,7 @@ class UrlForm extends Component {
     return (
       <form>
         <input
+          className='form-title'
           type='text'
           placeholder='Title...'
           name='title'
@@ -41,6 +42,7 @@ class UrlForm extends Component {
         />
 
         <input
+          className='form-long_url'
           type='text'
           placeholder='URL to Shorten...'
           name='long_url'
